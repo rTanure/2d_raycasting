@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>2d_raycasting</title>
+</head>
+<body>
+  <p>Clique com o botão esquerdo do mouse sobre o canvas e o movimente para mover o ponto de luz</p>
+  <canvas></canvas>
+  <div class="controler-box">
+    <div class="controler">
+      <span>Número de paredes: </span>
+      <input type="range" id="amount_walls" min="1" max="10" onchange="inputAmountWalls()" value="4">
+    </div>
+    <div class="controler">
+      <span>Número de raios: </span>
+      <input type="range" id="amount_rays" min="3" max="300" onchange="inputAmountRays()" value="100">
+    </div>
+  </div>
+  
+  
+  <script src="wall.js"></script>
+  <script src="ray.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
